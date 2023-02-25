@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.sumbitForm {
+	margin-top: 50px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	gap: 20px;
+}
+
+.sumbitForm div {
+	flex-direction: column;
+	width: 30%;
+}
+
+.sumbit {
+	width: 70%;
+}
+
+.sumbitForm input,
+.sumbitForm select {
+	padding: 5px 2px;
+}
+
+.radio {
+	justify-content: center;
+	align-items: center;
+}
+
+.radio div,
+.radio label {
+	width: 200px;
+}
+
+.fSubmit {
+	text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+	.sumbitForm div,
+	.sumbit {
+		width: 92%;
+	}
+
+	.sumbitForm input,
+	.sumbitForm select {
+		padding: 5px 0px;
+	}
+
+	.radio {
+		align-items: flex-start;
+	}
+}

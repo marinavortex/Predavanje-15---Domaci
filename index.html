@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>predavanje 15 - Domaci</title>
+	</head>
+	<body>
+		<form class="sumbitForm flex">
+			<div class="flex">
+				<label for="fName" for="">Ime:</label>
+				<input name="fName" type="text" placeholder="Unesite vase Ime" />
+			</div>
+
+			<div class="flex">
+				<label for="fAddress" for="">Adresa:</label>
+				<input name="fAddress" type="text" placeholder="Unesite vasu adresu" />
+			</div>
+
+			<div class="flex">
+				<label for="fEmail" for="">Email:</label>
+				<input name="fEmail" type="email" placeholder="Unesite vas email" />
+			</div>
+
+			<div class="flex">
+				<label for="fCity">Odaberite grad:</label>
+				<select name="fCity" id="fCity">
+					<option disabled selected value="Odaberite grad">
+						Odaberite grad
+					</option>
+					<option value="Beograd">Beograd</option>
+					<option value="Novi Sad">Novi Sad</option>
+					<option value="Sabac">Sabac</option>
+					<option value="Kragujevac">Kragujevac</option>
+				</select>
+			</div>
+
+			<div class="flex radio">
+				<label for="fRadio">Odaberite nacin placanja</label>
+
+				<div>
+					<input name="fRadio" type="radio" id="kreditna" selected />
+					<label for="kreditna">Kreditnom karticom</label>
+				</div>
+
+				<div>
+					<input name="fRadio" type="radio" id="pouzece" selected />
+					<label for="pouzece">Pouzecem</label>
+				</div>
+			</div>
+
+			<div>
+				<input type="checkbox" name="fCheckBox" />
+				<label for="fCheckBox">Zelim da primam mejlove sa ponudama</label>
+			</div>
+
+			<div class="fSubmit">
+				<input class="sumbit" type="submit" value="Posalji email" />
+			</div>
+		</form>
+	</body>
+</html>
